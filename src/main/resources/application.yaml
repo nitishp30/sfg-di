@@ -1,0 +1,14 @@
+# guru.jms.username
+guru:
+  jms:
+    username: JMS username
+    password: newpass
+    dburl: "d:someURL"
+    
+---
+spring:
+  profiles: de
+  
+guru:
+  jms:
+    username: JMS FROM GERMAN

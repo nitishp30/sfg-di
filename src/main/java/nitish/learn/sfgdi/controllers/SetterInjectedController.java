@@ -1,7 +1,6 @@
 package nitish.learn.sfgdi.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 import nitish.learn.sfgdi.services.GreetingService;
@@ -16,7 +15,6 @@ public class SetterInjectedController {
 	}
 
 	@Autowired
-	@Qualifier("greetingServiceImpl")
 	public void setGs(GreetingService gs) {
 		this.gs = gs;
 	}

@@ -1,6 +1,5 @@
 package nitish.learn.sfgdi.controllers;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 import nitish.learn.sfgdi.services.GreetingService;
@@ -10,7 +9,7 @@ public class I18nController {
 
 	private final GreetingService gs;
 
-	public I18nController(@Qualifier("i18nService") GreetingService gs) {
+	public I18nController(GreetingService gs) {
 		super();
 		this.gs = gs;
 	}
